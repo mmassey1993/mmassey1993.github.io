@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM1</title>
+</head>
+<body>
+<h2>DOM 1</h2>
+<h4>Using functions, create, edit and delete a paragraph tag element</h4>
+<h4>Check console log to see results</h4>
+<script src = "DOM1.js"></script>
+<input type ="submit" name="submit" value="Add p tag" onclick="createPara()"><br>
+Text to put in paragraph:<input type="text" id="TEXT">
+<input type ="submit" name="submit" onclick="editPara(document.getElementById('TEXT').value)"><br>
+<input type ="submit" name="submit" value ="Remove p tag" onclick="removePara()">
+<div id="div1">
+
+</div>
+
+
+<a style="position: absolute; text-align: center; right: 50%; top: 5%" type = "button" name = "projectlist"  href="../../ProjectList.html">Project List</a>
+
+</body>
+</html>
