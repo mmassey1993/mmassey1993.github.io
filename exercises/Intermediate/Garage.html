@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Garage</title>
+</head>
+<body>
+<div id="headings">
+    <h2>Garage</h2>
+    <h4>Create a virtual garage with check in, check out, output and calculate bill functionality</h4>
+    <br>
+</div>
+<div id="forms">
+
+    <h4>Check in Vehicle:</h4>
+    <form name="inform">
+        ID:<input type="text" id="vehicleID" style="width:40px">
+        Brand:<input type="text" id="brand">
+        Model:<input type="text" id="model">
+        Age:<input type="text" id="age"><br><br>
+    </form>
+    <button type="submit" name="checkin"
+            onclick="checkIn(document.getElementById('vehicleID').value, document.getElementById('brand').value, document.getElementById('model').value, document.getElementById('age').value)">
+        Check In Vehicle
+    </button>
+
+    <br>
+    <h4>Check out Vehicle:</h4>
+    <form name="outform">
+        ID:<input type="text" id="vehicleID2" style="width:40px"><br><br>
+    </form>
+    <button type="submit" name="checkout" onclick="checkOut(document.getElementById('vehicleID2').value)">Check Out
+        Vehicle
+    </button>
+
+    <br>
+    <h4>Calculate Bill</h4>
+    <form name="calcBill">
+        ID:<input type="text" id="vehicleID3" style="width:40px"><br><br>
+    </form>
+    <button type="submit" name="contents" onclick="calculateBill(document.getElementById('vehicleID3').value)">
+        Calculate
+        bill
+    </button>
+
+    <br><br><br>
+</div>
+<button type="submit" name="contents" onclick="getAllVehicles()">See garage contents</button>
+<div id="Table">
+    <table id="myTable" style="width:400px; display: none" border="1">
+        <tr>
+            <th>ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Age</th>
+        </tr>
+    </table>
+</div>
+<script src="Garage.js"></script>
+</body>
+</html>
