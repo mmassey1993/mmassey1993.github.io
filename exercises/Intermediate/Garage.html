@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="Garage.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Garage</title>
+</head>
+<body>
+<div id="headings">
+    <h2>Garage</h2>
+    <h4>Create a virtual garage with check in, check out, output and calculate bill functionality</h4>
+    <br>
+</div>
+
+<div id="car">
+
+    <h4 class="commands">Create Car:</h4>
+    <form name="carForm">
+        ID:<input type="text" id="vehicleID" style="width:40px"><br>
+        Brand:<input type="text" id="brand"><br>
+        Model:<input type="text" id="model"><br>
+        Age:<input type="text" id="age"><br><br>
+    </form>
+    <button type="submit" name="createCar"
+            onclick="makeCar(document.getElementById('vehicleID').value, document.getElementById('brand').value, document.getElementById('model').value, document.getElementById('age').value)">
+        Create Car
+    </button>
+</div>
+<br>
+<div id="forms">
+    <h4 class="commands">Check in Vehicle:</h4>
+    <form name="inputCar">
+        ID:<input type="text" id="vehicleID2" , style="width: 40px"><br><br>
+    </form>
+    <button type="submit" name="checkin"
+            onclick="checkIn(document.getElementById('vehicleID2').value)">
+        Check In Vehicle
+    </button>
+
+    <br>
+    <h4 class="commands">Check out Vehicle:</h4>
+    <form name="outform">
+        ID:<input type="text" id="vehicleID3" style="width:40px"><br><br>
+    </form>
+    <button type="submit" name="checkout" onclick="checkOut(document.getElementById('vehicleID3').value)">Check Out
+        Vehicle
+    </button>
+
+    <br>
+    <h4 class="commands">Calculate Bill:</h4>
+    <form name="calcBill">
+        ID:<input type="text" id="vehicleID4" style="width:40px"><br><br>
+    </form>
+    <button type="submit" name="contents" onclick="calculateBill(document.getElementById('vehicleID4').value)">
+        Calculate
+        bill
+    </button>
+</div>
+
+<br><br><br>
+<button type="submit" name="contents" onclick="getAllVehicles()">See Garage Contents</button>
+<br>
+<div id="Table">
+    <table id="myTable">
+        <tr>
+            <th>ID</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Age</th>
+            <th>Paid</th>
+        </tr>
+    </table>
+</div>
+
+<script src="Garage.js"></script>
+<script src="Car.js"></script>
+</body>
+</html>

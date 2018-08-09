@@ -1,0 +1,34 @@
+#Headings {
+    color:darkgrey;
+    text-align: center;
+    font-size: 70px;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    font-family: Leelawadee;
+}
+
+
+p {
+    padding-top:120px;
+    color: darkgrey;
+    text-align: center;
+    font-size:80px;
+    font-family: "Lucida Handwriting";
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    top:50%;
+    bottom: 50%;
+    right:50%;
+    left:50%;
+}
+
+body {
+    background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/RGBxnOy/hourglass-black-sand-white-background-hourglass-with-black-sand-in-bright-film-white-time-passing-conceptual_v1od88r6__F0000.png");
+    background-size: cover;
+}
