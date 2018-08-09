@@ -1,0 +1,63 @@
+#headings {
+    font-family: Helvetica;
+    color: dodgerblue;
+    text-shadow:
+            3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    background-color: #999999;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: Georgia;
+    font-size: xx-large;
+}
+
+html {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+button {
+    background-color: dodgerblue ;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.commands {
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+form {
+    font-family: "Arial Black";
+    font-size: 14px;
+
+    color: red;
+}
+
+#myTable{
+    width:500px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    grid-template-columns: repeat(auto-fit, 100px);
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+tr {
+    font-family: Calibri;
+    font-size: 25px;
+}
+
