@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    color: #666;
+    background: #FF2e2e;
+
+}
+
+#content {
+    width: 1500px;
+    overflow: hidden;
+}
+
+#root {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(120deg,#ff0707 0%, #FCFF00 100%);
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 1px 0px black,
+    1px 0 0px black,
+    1px 2px 1px black,
+    2px 1px 1px black;
+}
+
+#logo {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: center;
+    vertical-align: top;
+    padding: 3rem 5rem;
+    width: 100%;
+
+    margin: 0 0 2rem 0;
+    font-size: 90px;
+    color: yellow;
+    background: red;
+    text-shadow: 0 1px 0px black,
+    1px 0 0px #5dabcd,
+    1px 2px 1px darkred,
+    2px 1px 1px crimson,
+    2px 3px 2px crimson,
+    3px 2px 2px crimson,
+    3px 4px 2px darkred,
+    4px 3px 3px crimson,
+    4px 5px 3px darkred,
+    5px 4px 2px crimson,
+    5px 6px 2px darkred,
+    6px 5px 2px crimson,
+    6px 7px 1px darkred,
+    7px 6px 1px crimson,
+    7px 8px 0px darkred,
+    8px 7px 0px crimson;
+}
+
+#About {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 100;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: center;
+    vertical-align: top;
+    padding: 1rem 2rem;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    font-size: 30px;
+    color: yellow;
+    background: red;
+    text-shadow: 0 1px 0px black,
+    1px 0 0px #5dabcd,
+    1px 2px 1px darkred,
+    2px 1px 1px crimson,
+    2px 3px 2px crimson,
+    3px 2px 2px crimson,
+    3px 4px 2px darkred,
+    4px 3px 3px crimson;
+
+}
+
+#GeneralJokes {
+    margin-right: auto;
+    width: 500px;
+    position: relative;
+    float: left;
+}
+
+#Knock-knock {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#ProgrammingJokes {
+    margin-left: auto;
+    width: 500px;
+    position: relative;
+    float: right;
+}
+
+p {
+    padding: 0 2.5rem 2.5rem;
+    margin: 0;
+    border: none;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1rem;
+    background: white;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+
+#answer{
+
+}
+
+.card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -10px, 0);
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33% - 2rem);
+    }
+}
+
+.card:nth-child(2n) h1 {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.card:nth-child(4n) h1 {
+    background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.card:nth-child(5n) h1 {
+    background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
+}
